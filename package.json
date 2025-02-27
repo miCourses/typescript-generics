@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "rodar": "tsx ./src/main.ts",
+    "study": "tsx ./src/main.ts",
     "build": "tsc",
     "test": "echo \"Error: no test specified\" && exit 1"
   },

@@ -1,6 +1,5 @@
-function test(value: number): number {
-    const result: number = value;
+function example(value: string): string{
     return value;
 }
 
-console.log("Valor é: ", test(1234));
+console.log(example("Ok"));
