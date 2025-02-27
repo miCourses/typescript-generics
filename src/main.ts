@@ -1,5 +1,6 @@
 import { Example } from "./generics_in_class";
 import { Category, Product } from "./generics_in_class_real";
+import { RepositoryInterface } from "./generics_in_interface";
    
 
 function main() {
@@ -7,12 +8,14 @@ function main() {
     // console.log("E aqui", ex1.getValue());
 
    
-    const aCategory = new Category({name: "string", description: "string"})
+    //generic in class
+    // const aCategory = new Category({name: "string", description: "string"})
 
-    const aProduct = new Product({title: "Manga", price: 2000});
+    // const aProduct = new Product({title: "Manga", price: 2000});
 
-    console.log("aCategory: ", aCategory)
-    console.log("aProduct: ", aProduct);
+    // console.log("aCategory: ", aCategory.toJSON())
+    // console.log("aProduct: ", aProduct.toJSON());
+
 }
 
 main();
