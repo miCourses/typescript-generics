@@ -1,13 +1,17 @@
-export class Example<T> {
-    private value: T;
+export  type CategoryProperties = {
+    name: string,
+    description: string
+}  
 
-    constructor(value: T){
-        this.value = value;
-    }
-
-
-    public getValue(): T {
-        return this.value;
-    }
-
+type ProductProperties = {
+    title: string,
+    price: number
 }
+
+abstract class Entity<Props> {
+    constructor(protected props: Props){}
+}
+
+export class Category extends Entity<CategoryProperties>{}
+
+export class Product extends Entity<ProductProperties>{}
