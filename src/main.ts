@@ -3,6 +3,7 @@ import { Category, Product } from "./generics_in_class_real";
 import { display, Person, User } from "./generics_in_constraints";
 import { getPropperty, typescriptInfo } from "./generics_in_constraints2";
 import { RepositoryInterface } from "./generics_in_interface";
+import { report, sales2021_2, sales2022_2 } from "./generics_in_union_of_generics";
    
 
 function main() {
@@ -33,7 +34,11 @@ function main() {
     // display(user1, 234);
 
     //generics with contraints 2
-    console.log(getPropperty(typescriptInfo, "name"));
+    // console.log(getPropperty(typescriptInfo, "name"));
+
+    //uniao de generics
+    console.log(report(sales2021_2, sales2022_2))
+
 
 
 }
